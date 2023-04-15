@@ -31,10 +31,11 @@ export default function MetaMaskCard() {
       isActivating={isActivating}
       isActive={isActive}
       error={error}
+      // @ts-ignore: Unreachable code error
       setError={setError}
       accounts={accounts}
       provider={provider}
       ENSNames={ENSNames}
     />
-  )
+  );
 }

@@ -53,7 +53,8 @@ export function ConnectWithSelect({
   error: Error | undefined
   setError: (error: Error | undefined) => void
 }) {
-  const [desiredChainId, setDesiredChainId] = useState<number>(undefined)
+  // @ts-ignore: Unreachable code error
+  const [desiredChainId, setDesiredChainId] = useState<number>(undefined);
 
   /**
    * When user connects eagerly (`desiredChainId` is undefined) or to the default chain (`desiredChainId` is -1),
@@ -61,13 +62,13 @@ export function ConnectWithSelect({
    */
   useEffect(() => {
     if (activeChainId && (!desiredChainId || desiredChainId === -1)) {
-      setDesiredChainId(activeChainId)
+      setDesiredChainId(activeChainId);
     }
-  }, [desiredChainId, activeChainId])
+  }, [desiredChainId, activeChainId]);
 
   const switchChain = useCallback(
     async (desiredChainId: number) => {
-      setDesiredChainId(desiredChainId)
+      setDesiredChainId(desiredChainId);
 
       try {
         if (
@@ -76,35 +77,40 @@ export function ConnectWithSelect({
           // If they want to connect to the default chain and we're already connected, return
           (desiredChainId === -1 && activeChainId !== undefined)
         ) {
-          setError(undefined)
-          return
+          setError(undefined);
+          return;
         }
 
         await connector.activate(desiredChainId);
 
-        setError(undefined)
+        setError(undefined);
       } catch (error) {
-        setError(error)
+        // @ts-ignore: Unreachable code error
+        setError(error);
       }
     },
     [connector, activeChainId, setError]
-  )
+  );
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <div style={{ marginBottom: '1rem' }} />
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ marginBottom: "1rem" }} />
       {isActive ? (
         error ? (
-          <button onClick={() => switchChain(desiredChainId)}>Try again?</button>
+          <button onClick={() => switchChain(desiredChainId)}>
+            Try again?
+          </button>
         ) : (
           <button
             onClick={() => {
               if (connector?.deactivate) {
-                void connector.deactivate()
+                void connector.deactivate();
               } else {
-                void connector.resetState()
+                void connector.resetState();
               }
-              setDesiredChainId(undefined)
+
+              // @ts-ignore: Unreachable code error
+              setDesiredChainId(undefined);
             }}
           >
             Disconnect
@@ -113,6 +119,7 @@ export function ConnectWithSelect({
       ) : (
         <button
           onClick={() =>
+            // @ts-ignore: Unreachable code error
             connector instanceof GnosisSafe
               ? void connector
                   .activate()
@@ -122,9 +129,9 @@ export function ConnectWithSelect({
           }
           disabled={isActivating || !desiredChainId}
         >
-          {error ? 'Try again?' : 'Connect'}
+          {error ? "Try again?" : "Connect"}
         </button>
       )}
     </div>
-  )
+  );
 }
