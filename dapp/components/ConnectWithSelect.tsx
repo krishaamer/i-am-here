@@ -1,7 +1,7 @@
 import type { Web3ReactHooks } from "@web3-react/core";
 import type { MetaMask } from "@web3-react/metamask";
 import { useCallback, useEffect, useState } from "react";
-
+import { Button } from "@chakra-ui/react";
 import { CHAINS, getAddChainParameters } from "../connectors/chains";
 
 function ChainSelect({
@@ -101,11 +101,11 @@ export function ConnectWithSelect({
       <div style={{ marginBottom: "1rem" }} />
       {isActive ? (
         error ? (
-          <button onClick={() => switchChain(desiredChainId)}>
+          <Button onClick={() => switchChain(desiredChainId)}>
             Try again?
-          </button>
+          </Button>
         ) : (
-          <button
+          <Button
             onClick={() => {
               if (connector?.deactivate) {
                 void connector.deactivate();
@@ -118,12 +118,16 @@ export function ConnectWithSelect({
             }}
           >
             Disconnect
-          </button>
+          </Button>
         )
       ) : (
-        <button onClick={() => switchChain(desiredChainId)}>
+        <Button
+          colorScheme="teal"
+          variant="outline"
+          onClick={() => switchChain(desiredChainId)}
+        >
           {error ? "Try again?" : "Connect"}
-        </button>
+        </Button>
       )}
     </div>
   );
