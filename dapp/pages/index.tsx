@@ -22,34 +22,21 @@ export default function StakeChat({ friends }) {
       <Head>
         <title>I am here.</title>
       </Head>
+      <Confetti />
+      <div
+        className="header grid h-screen place-items-center"
+        style={{
+          backgroundImage: "url('bg.png')",
+          backgroundSize: "cover",
+          // paddingTop: "60vh",
+        }}
+      >
+        {/* <Image src={pfp} alt="I AM HERE" width={30} height={30} /> */}
+        {/* <h1 className={cn("text-5xl", gloria.className)}>I AM HERE</h1> */}
+        <IntroAnimation />
+        <MetaMaskCard />
+      </div>
       <div className="container mx-auto">
-        <Confetti />
-        <div
-          className="header grid h-screen place-items-center"
-          style={{
-            backgroundImage: "url('bg.png')",
-            backgroundSize: "cover",
-            // paddingTop: "60vh",
-          }}
-        >
-          {/* <Image src={pfp} alt="I AM HERE" width={30} height={30} /> */}
-          {/* <h1 className={cn("text-5xl", gloria.className)}>I AM HERE</h1> */}
-          <IntroAnimation />
-          <MetaMaskCard />
-        </div>
-        <div className="grid place-items-center">
-          <span className="inline-block">
-            <Dropdown
-              label="Today"
-              dismissOnClick={false}
-              size="xl"
-              className="inline"
-            >
-              <Dropdown.Item>This week</Dropdown.Item>
-              <Dropdown.Item>Next week</Dropdown.Item>
-            </Dropdown>
-          </span>
-        </div>
         <div className="header grid place-items-center mt-20 mb-96">
           <h1 className={cn("text-5xl", gloria.className)}>
             People to meet in Tokyo
