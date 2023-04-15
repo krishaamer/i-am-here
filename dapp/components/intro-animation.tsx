@@ -1,4 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { Sora, Gloria_Hallelujah } from "next/font/google";
+import cn from "cnz";
+
+const sora = Sora({ subsets: ["latin"] });
+const gloria = Gloria_Hallelujah({ subsets: ["latin"], weight: ["400"] });
 
 const containerVariants = {
   visible: {
@@ -39,14 +44,18 @@ const IntroAnimation = () => {
         animate="visible"
         exit="hidden"
       >
-        <motion.div key="child1" variants={childVariants} className="text-5xl">
+        <motion.div
+          key="child1"
+          variants={childVariants}
+          className={cn("text-5xl", sora.className)}
+        >
           Tokyo
         </motion.div>
         <motion.div
           key="child2"
           variants={childVariants}
           exit="exit"
-          className="text-5xl"
+          className={cn("text-5xl", sora.className)}
         >
           Taipei
         </motion.div>
@@ -54,7 +63,7 @@ const IntroAnimation = () => {
           key="child3"
           variants={childVariants}
           exit="exit"
-          className="text-5xl"
+          className={cn("text-5xl", sora.className)}
         >
           Lisbon
         </motion.div>

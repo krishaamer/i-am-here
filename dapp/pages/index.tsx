@@ -62,6 +62,9 @@ export default function StakeChat({ friends }) {
           <h1 className={cn("text-5xl", gloria.className)}>
             People to meet in Tokyo
           </h1>
+          <p className={cn("text-xl pt-5", sora.className)}>
+            Talk to people who own the Pragma NFT
+          </p>
           <Friends friends={friends} />
         </div>
       </div>
