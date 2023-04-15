@@ -73,7 +73,7 @@ const IntroAnimation = () => {
 
   return (
     <AnimatePresence onExitComplete={() => setShowCircle(true)}>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", color: "black" }}>
         <Circle showCircle={showCircle}>
           <motion.div
             key="child1"

@@ -123,10 +123,10 @@ export function ConnectWithSelect({
       ) : (
         <Button
           colorScheme="teal"
-          variant="outline"
+          // variant="outline"
           onClick={() => switchChain(desiredChainId)}
         >
-          {error ? "Try again?" : "Connect"}
+          {error ? "Try again?" : "Check-in"}
         </Button>
       )}
     </div>
