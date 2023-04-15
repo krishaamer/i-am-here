@@ -18,8 +18,6 @@ const gloria = Gloria_Hallelujah({ subsets: ["latin"], weight: ["400"] });
 // @ts-ignore: Unreachable code error
 export default function StakeChat({ friends }) {
 
-  //console.log(posts?.data?.TokenBalances?.TokenBalance);
-
   return (
     <div>
       <Head>
