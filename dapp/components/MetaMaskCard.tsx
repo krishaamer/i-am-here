@@ -9,9 +9,7 @@ export default function MetaMaskCard() {
   const chainId = useChainId()
   const accounts = useAccounts()
   const isActivating = useIsActivating()
-
   const isActive = useIsActive()
-
   const provider = useProvider()
   const ENSNames = useENSNames(provider)
 

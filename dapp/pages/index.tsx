@@ -3,7 +3,8 @@ import cn from "cnz";
 import Confetti from "../components/confetti";
 import Friends from "../components/friends";
 import ChatBox from "../components/chatbox";
-import HeaderBG from "../components/HeaderBG";
+import IntroAnimation from "../components/intro-animation";
+import { Dropdown } from "flowbite-react";
 import {
   Sora,
   Gloria_Hallelujah
@@ -26,8 +27,33 @@ export default function StakeChat({ friends }) {
       <div className="container mx-auto">
         <Confetti />
         <div className="header grid h-screen place-items-center">
-          <h1 className={cn("text-5xl", gloria.className)}>I AM HERE.</h1>
+          <h1 className={cn("text-5xl", gloria.className)}>I AM HERE</h1>
+          <IntroAnimation />
           <MetaMaskCard />
+        </div>
+        <div className="grid place-items-center">
+          <span className="inline-block mb-4">
+            <Dropdown
+              label="Tokyo"
+              dismissOnClick={false}
+              size="xl"
+              className="inline"
+            >
+              <Dropdown.Item>Taipei</Dropdown.Item>
+              <Dropdown.Item>Lisbon</Dropdown.Item>
+            </Dropdown>
+          </span>
+          <span className="inline-block">
+            <Dropdown
+              label="This week"
+              dismissOnClick={false}
+              size="xl"
+              className="inline"
+            >
+              <Dropdown.Item>Taipei</Dropdown.Item>
+              <Dropdown.Item>Lisbon</Dropdown.Item>
+            </Dropdown>
+          </span>
         </div>
         <div className="header grid h-screen place-items-center">
           <h1 className={cn("text-5xl", gloria.className)}>
