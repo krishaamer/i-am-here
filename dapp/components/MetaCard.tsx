@@ -31,29 +31,30 @@ export function MetaCard({
   accounts,
   provider,
 }: Props) {
-  // <div
-  //   style={{
-  //     display: 'flex',
-  //     flexDirection: 'column',
-  //     justifyContent: 'space-between',
-  //     width: '20rem',
-  //     padding: '1rem',
-  //     margin: '1rem',
-  //     overflow: 'auto',
-  //     border: '1px solid',
-  //     borderRadius: '1rem',
-  //   }}
-  // >
-  //   <b>{getName(connector)}</b>
-  //   <div style={{ marginBottom: '1rem' }}>
-  //     <Status isActivating={isActivating} isActive={isActive} error={error} />
-  //   </div>
-  //   <Chain chainId={activeChainId} />
-  //   <div style={{ marginBottom: '1rem' }}>
-  //     <Accounts accounts={accounts} provider={provider} ENSNames={ENSNames} />
-  //   </div>
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        width: "20rem",
+        padding: "1rem",
+        margin: "1rem",
+        overflow: "auto",
+        border: "none",
+        borderRadius: "1rem",
+      }}
+    >
+      <div style={{ visibility: "hidden" }}>{getName(connector)}</div>
+      <div style={{ marginBottom: "1rem", visibility: "hidden" }}>
+        <Status isActivating={isActivating} isActive={isActive} error={error} />
+      </div>
+      <div style={{ visibility: "hidden" }}>
+        <Chain chainId={activeChainId} />
+      </div>
+      <div style={{ marginBottom: "1rem", visibility: "hidden" }}>
+        <Accounts accounts={accounts} provider={provider} ENSNames={ENSNames} />
+      </div>
       <ConnectWithSelect
         connector={connector}
         activeChainId={activeChainId}
