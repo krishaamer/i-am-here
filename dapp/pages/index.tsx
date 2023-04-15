@@ -32,19 +32,10 @@ export default function StakeChat({ friends }) {
           <MetaMaskCard />
         </div>
         <div className="header grid h-screen place-items-center">
-          <h1 className={cn("text-5xl", gloria.className)}>Tokyo</h1>
-        </div>
-        <div className="header grid h-screen place-items-center">
           <h1 className={cn("text-5xl", gloria.className)}>
-            People to meet at Pragma
+            People to meet in Tokyo
           </h1>
           <Friends friends={friends} />
-        </div>
-        <div className="header grid h-screen place-items-center">
-          <h1 className={cn("text-5xl", gloria.className)}>Events</h1>
-          <div>
-            <Events />
-          </div>
         </div>
       </div>
       <div className="chat-container sora">
