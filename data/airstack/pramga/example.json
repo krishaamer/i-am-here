@@ -1,0 +1,679 @@
+{
+    "data": {
+        "TokenBalances": {
+            "TokenBalance": [
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xd6f38b314c0e4baef7b40c328420b0005f50d992"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x1365afec5d9b143c14700acc6e5017ea549ba9c9"
+                        ],
+                        "primaryDomain": {
+                            "name": "caicaikiki.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "caicaikiki.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xe4e6dff2c4fa5ba1653df8e77157e740b8a8200a"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xe4e6dff2c4fa5ba1653df8e77157e740b8a8200a"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xe4e6dff2c4fa5ba1653df8e77157e740b8a8200a"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x77d4bd83065f7d2d1f594b72f548bc058e4dc33c"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x77d4bd83065f7d2d1f594b72f548bc058e4dc33c"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x77d4bd83065f7d2d1f594b72f548bc058e4dc33c"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x77d4bd83065f7d2d1f594b72f548bc058e4dc33c"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x77d4bd83065f7d2d1f594b72f548bc058e4dc33c"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x6c3f373baec5d2d0fb3c82c4f3db5e48873ae363"
+                        ],
+                        "primaryDomain": {
+                            "name": "shardian.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "shardian.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x37e4bac8ab9433acca9b62dfed849600fda5eaf0"
+                        ],
+                        "primaryDomain": {
+                            "name": "imagineaizy.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "imagineaizy.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xa275969434b1fd56e0a082a2207bb0e98e2767d1"
+                        ],
+                        "primaryDomain": {
+                            "name": "haivl.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "33336789.eth"
+                            },
+                            {
+                                "name": "22226789.eth"
+                            },
+                            {
+                                "name": "01233456.eth"
+                            },
+                            {
+                                "name": "56786789.eth"
+                            },
+                            {
+                                "name": "34566789.eth"
+                            },
+                            {
+                                "name": "haivl.eth"
+                            },
+                            {
+                                "name": "99996789.eth"
+                            },
+                            {
+                                "name": "34565678.eth"
+                            },
+                            {
+                                "name": "24686789.eth"
+                            },
+                            {
+                                "name": "88886789.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x187089b33e5812310ed32a57f53b3fad0383a19d"
+                        ],
+                        "primaryDomain": null,
+                        "domains": [
+                            {
+                                "name": "brijean.eth"
+                            },
+                            {
+                                "name": "26fix.eth"
+                            },
+                            {
+                                "name": "tkikz.eth"
+                            },
+                            {
+                                "name": "zkvibes.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x1057c1cda7a956f32ccbd9e133d8db8f3f6258ea"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xfae8c3b5f6a3c88ac229a866386042f9fc64b6c2"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x5009847865b98565f4a3b07e00746c55012963fb"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xa33df84efd75309ae7ceb5aea44e1c7c02d98f4b"
+                        ],
+                        "primaryDomain": {
+                            "name": "kurotaky.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "kurotaki.eth"
+                            },
+                            {
+                                "name": "kurotaky.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x0b719e192e8d395ebd1706a512e52ac9f22fd5fd"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x94d2334ac77ecfe66ef2e4ebbeeab8671b131c49"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x5e0c8ac61a8f260942811974bb5635206e739c51"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x761e7eb7e79a7a2339d2f3feb132b48db8d61852"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xdc7fde051f53d1b8dd5515a2dc6bb4c481b4c897"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x963af327e553eb2fc290bb99d50fbb9e88fab824"
+                        ],
+                        "primaryDomain": {
+                            "name": "oritwoen.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "ari10governance.eth"
+                            },
+                            {
+                                "name": "oritwoen.eth"
+                            },
+                            {
+                                "name": "midnightpanthers.eth"
+                            },
+                            {
+                                "name": "midnight-panthers.eth"
+                            },
+                            {
+                                "name": "0ri2n.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x963af327e553eb2fc290bb99d50fbb9e88fab824"
+                        ],
+                        "primaryDomain": {
+                            "name": "oritwoen.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "ari10governance.eth"
+                            },
+                            {
+                                "name": "oritwoen.eth"
+                            },
+                            {
+                                "name": "midnightpanthers.eth"
+                            },
+                            {
+                                "name": "midnight-panthers.eth"
+                            },
+                            {
+                                "name": "0ri2n.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x56e08babb8bf928bd8571d2a2a78235ae57ae5bd"
+                        ],
+                        "primaryDomain": {
+                            "name": "ben2k.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "0xben2k.eth"
+                            },
+                            {
+                                "name": "ben2k.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x9b2d6e2d5ef25c0454abaa392fcd9796e05567c9"
+                        ],
+                        "primaryDomain": null,
+                        "domains": [
+                            {
+                                "name": "globallager.eth"
+                            },
+                            {
+                                "name": "[aa739781b9274141245141417a3dc50b50b41d055170d05d8f628654fa38be19].ethid.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x1c23fa52c7e4b1ed0aa70611d918f5fd20e2b039"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x6f5f87f4c5523bb5ce636cab46a6f666c265aa01"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x3ce2d40a58e72212870011ff45e95487c20c8647"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x6602a4cf6c23910610bb9fac56589aa55e736bce"
+                        ],
+                        "primaryDomain": {
+                            "name": "lifefeelsgood.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "lifefeelsgood.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x4d7a23045f7c76dc57e2afd2eb038e2cf743e284"
+                        ],
+                        "primaryDomain": {
+                            "name": "globin.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "globin.eth"
+                            },
+                            {
+                                "name": "help-me-save-my-house-and-my-family-i-will-pay-you-back.eth"
+                            },
+                            {
+                                "name": "i-was-here-before-the-merge.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xf165cadb5eb1ec9b30bb2a088df3e5380d644427"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xf165cadb5eb1ec9b30bb2a088df3e5380d644427"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xf165cadb5eb1ec9b30bb2a088df3e5380d644427"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xf165cadb5eb1ec9b30bb2a088df3e5380d644427"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xf165cadb5eb1ec9b30bb2a088df3e5380d644427"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xca6741f763a308cbbfb9b62ba99212e7d9ef5107"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x73b9f6a6e52ace2797f0a6e52aac530ed1f2a2af"
+                        ],
+                        "primaryDomain": {
+                            "name": "halsk.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "halsk.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x74199ddac9607a3a694011793f674fa1e0d0fe2d"
+                        ],
+                        "primaryDomain": {
+                            "name": "jaybuidl.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "jaybuidl.eth"
+                            },
+                            {
+                                "name": "kleroslabs.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x41fd941bb20990b5bec8cb424f19397254707981"
+                        ],
+                        "primaryDomain": {
+                            "name": "niezam.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "niezam.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xd4a9881136d3928668932617cfbfdf88fa9f12fd"
+                        ],
+                        "primaryDomain": {
+                            "name": "swanday.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "swanday.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xd4a9881136d3928668932617cfbfdf88fa9f12fd"
+                        ],
+                        "primaryDomain": {
+                            "name": "swanday.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "swanday.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xd1699002d9548dca840268ba1bd1afa27e0ba62d"
+                        ],
+                        "primaryDomain": {
+                            "name": "qdqdqd.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "areuseriouus.eth"
+                            },
+                            {
+                                "name": "qdqd.sismo.eth"
+                            },
+                            {
+                                "name": "qdqdqd.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x8c4a662711aedd22bca4a562987bbcc99a640604"
+                        ],
+                        "primaryDomain": {
+                            "name": "matrex.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "matrex.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x8c4a662711aedd22bca4a562987bbcc99a640604"
+                        ],
+                        "primaryDomain": {
+                            "name": "matrex.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "matrex.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x405fa80f1539dd1c86f0ac138945a75ad451fe4a"
+                        ],
+                        "primaryDomain": {
+                            "name": "jell-o.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "jell-o.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x405fa80f1539dd1c86f0ac138945a75ad451fe4a"
+                        ],
+                        "primaryDomain": {
+                            "name": "jell-o.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "jell-o.eth"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0xf18251f21b76935f0cc396a2e032b1977f41609c"
+                        ],
+                        "primaryDomain": null,
+                        "domains": null
+                    }
+                },
+                {
+                    "owner": {
+                        "addresses": [
+                            "0x7c0d681098a9d46bd34637870c3afa4bfc9ec720"
+                        ],
+                        "primaryDomain": {
+                            "name": "kersic.eth"
+                        },
+                        "domains": [
+                            {
+                                "name": "kersic.eth"
+                            },
+                            {
+                                "name": "masca.eth"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
