@@ -55,7 +55,7 @@ export default function StakeChat({ friends }) {
             </Dropdown>
           </span>
         </div>
-        <div className="header grid h-screen place-items-center">
+        <div className="header grid place-items-center mt-20 mb-96">
           <h1 className={cn("text-5xl", gloria.className)}>
             People to meet in Tokyo
           </h1>
