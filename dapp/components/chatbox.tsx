@@ -21,8 +21,8 @@ export default function ChatBox() {
   return (
     <div>
       <Chat
-        account={account || "0x3A6666e9d8fc42d903807EF35c713527223b1ce3"}
-        supportAddress="0x3A6666e9d8fc42d903807EF35c713527223b1ce3"
+        account="0x3A6666e9d8fc42d903807EF35c713527223b1ce3"
+        supportAddress="0xFfEa14430490eDB32Ed08828B2C237888972095b"
         // @ts-ignore: Unreachable code error
         env="staging"
         modalTitle={"I AM HERE"}

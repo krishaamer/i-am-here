@@ -23,11 +23,6 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-.inter,
-.inter>* {
-  font-family: Inter !important;
-}
-
 .gloria {
   font-family: 'Gloria Hallelujah' !important;
 }
@@ -45,4 +40,9 @@ body {
 
 .chat-container span {
   /* display: none; */
+}
+
+.header-bg {
+  background: url(../public/header-bg.svg);
+  background-repeat: no-repeat;
 }
