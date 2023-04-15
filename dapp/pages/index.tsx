@@ -35,17 +35,6 @@ export default function StakeChat({ friends }) {
           <MetaMaskCard />
         </div>
         <div className="grid place-items-center">
-          <span className="inline-block mb-4">
-            <Dropdown
-              label="Tokyo"
-              dismissOnClick={false}
-              size="xl"
-              className="inline"
-            >
-              <Dropdown.Item>Taipei</Dropdown.Item>
-              <Dropdown.Item>Lisbon</Dropdown.Item>
-            </Dropdown>
-          </span>
           <span className="inline-block">
             <Dropdown
               label="Today"
