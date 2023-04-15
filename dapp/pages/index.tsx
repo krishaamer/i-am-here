@@ -8,6 +8,11 @@ import { Inter, Sora, Gloria_Hallelujah as Gloria, Rubik_80s_Fade as Rubik } fro
 import MetaMaskCard from "../components/MetaMaskCard";
 import Provider from "../components/Provider";
 import Head from "next/head";
+import PostList, {
+  ALL_POSTS_QUERY,
+  allPostsQueryVars,
+} from "../components/post-list";
+import { initializeApollo, addApolloState } from "../lib/apolloClient";
 
 const inter = Inter({ subsets: ["latin"] });
 const zora = Sora({ subsets: ["latin"] });
@@ -21,6 +26,7 @@ export default function StakeChat() {
         <title>I am here.</title>
       </Head>
       <div className="container mx-auto">
+        <PostList />
         <Confetti />
         <div className="header grid h-screen place-items-center">
           <h1 className={cn("text-5xl", gloria.className)}>I AM HERE.</h1>
@@ -49,4 +55,18 @@ export default function StakeChat() {
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const apolloClient = initializeApollo();
+
+  await apolloClient.query({
+    query: ALL_POSTS_QUERY,
+    variables: allPostsQueryVars,
+  });
+
+  return addApolloState(apolloClient, {
+    props: {},
+    revalidate: 1,
+  });
 }
