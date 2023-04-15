@@ -29,14 +29,13 @@ export default function Friends({ friends }) {
               <GridItem w="100%" h="160" key={idx}>
                 <Card w={200}>
                   <CardHeader>
-                    <Heading size="sm">{t?.owner?.primaryDomain?.name}</Heading>
+                    <Heading size="md" className="hover:underline hover:cursor-pointer">{t?.owner?.primaryDomain?.name}</Heading>
                   </CardHeader>
                   <CardBody>
                     <Wrap>
                       <WrapItem key={idx}>
                         <Avatar
-                          name="Kola Tioluwani"
-                          src="https://bit.ly/tioluwani-kolawole"
+                          name={t?.owner?.primaryDomain?.name}
                         />
                       </WrapItem>
                     </Wrap>
