@@ -4,15 +4,20 @@ import Confetti from "../components/confetti";
 import Events from "../components/events";
 import Friends from "../components/friends";
 import ChatBox from "../components/chatbox";
-import { Inter, Sora, Gloria_Hallelujah as Gloria, Rubik_80s_Fade as Rubik } from "next/font/google";
+import {
+  Inter,
+  Sora,
+  Gloria_Hallelujah as Gloria,
+  Rubik_80s_Fade as Rubik,
+} from "next/font/google";
 import MetaMaskCard from "../components/MetaMaskCard";
 import Provider from "../components/Provider";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 const zora = Sora({ subsets: ["latin"] });
-const gloria = Gloria({ subsets: ["latin"], weight:["400"] });
-const rubik = Rubik({ subsets: ["latin"], weight:["400"] });
+const gloria = Gloria({ subsets: ["latin"], weight: ["400"] });
+const rubik = Rubik({ subsets: ["latin"], weight: ["400"] });
 
 export default function StakeChat() {
   return (
@@ -24,6 +29,9 @@ export default function StakeChat() {
         <Confetti />
         <div className="header grid h-screen place-items-center">
           <h1 className={cn("text-5xl", gloria.className)}>I AM HERE.</h1>
+          <h2>
+            <button>TOKYO</button>
+          </h2>
           <MetaMaskCard />
         </div>
         <div className="header grid h-screen place-items-center">
