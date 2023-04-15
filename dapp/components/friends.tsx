@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Card,
+  Grid, GridItem,
   CardHeader,
   CardBody,
   CardFooter,
@@ -16,36 +17,33 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 
-export default function Cards() {
+// @ts-ignore: Unreachable code error
+export default function Friends({ friends }) {
 
   return (
-    <div>
-      <Wrap>
-        <WrapItem>
-          <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-        </WrapItem>
-        <WrapItem>
-          <Avatar
-            name="Kola Tioluwani"
-            src="https://bit.ly/tioluwani-kolawole"
-          />
-        </WrapItem>
-        <WrapItem>
-          <Avatar name="Kent Dodds" src="https://bit.ly/kent-c-dodds" />
-        </WrapItem>
-        <WrapItem>
-          <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" />
-        </WrapItem>
-        <WrapItem>
-          <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
-        </WrapItem>
-        <WrapItem>
-          <Avatar name="Christian Nwamba" src="https://bit.ly/code-beast" />
-        </WrapItem>
-        <WrapItem>
-          <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
-        </WrapItem>
-      </Wrap>
-    </div>
+    <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+      {friends?.data?.TokenBalances?.TokenBalance?.map(
+        (t: any, idx: number) =>
+          t?.owner?.primaryDomain?.name && (
+            <GridItem w="100%" h="160" key={idx}>
+              <Card w={200}>
+                <CardHeader>
+                  <Heading size="sm">{t?.owner?.primaryDomain?.name}</Heading>
+                </CardHeader>
+                <CardBody>
+                  <Wrap>
+                    <WrapItem key={idx}>
+                      <Avatar
+                        name="Kola Tioluwani"
+                        src="https://bit.ly/tioluwani-kolawole"
+                      />
+                    </WrapItem>
+                  </Wrap>
+                </CardBody>
+              </Card>
+            </GridItem>
+          )
+      )}
+    </Grid>
   );
 }
