@@ -3,6 +3,7 @@ import cn from "cnz";
 import Confetti from "../components/confetti";
 import Friends from "../components/friends";
 import ChatBox from "../components/chatbox";
+import HeaderBG from "../components/HeaderBG";
 import {
   Sora,
   Gloria_Hallelujah

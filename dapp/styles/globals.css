@@ -41,3 +41,8 @@ body {
 .chat-container span {
   /* display: none; */
 }
+
+.header-bg {
+  background: url(../public/header-bg.svg);
+  background-repeat: no-repeat;
+}
