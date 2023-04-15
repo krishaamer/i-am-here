@@ -26,7 +26,15 @@ body {
 .inter,
 .inter>* {
   font-family: Inter !important;
-  font-size: 3rem !important;
+}
+
+.gloria {
+  font-family: 'Gloria Hallelujah' !important;
+}
+
+.sora,
+.sora>* {
+  font-family: Sora !important;
 }
 
 .chat-container {}
