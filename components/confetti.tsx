@@ -5,12 +5,15 @@ import ReactCanvasConfetti from "react-canvas-confetti";
 export default function Confetti() {
   const refAnimationInstance = useRef(null);
 
+  // @ts-ignore: Unreachable code error
   const getInstance = useCallback((instance) => {
     refAnimationInstance.current = instance;
   }, []);
 
+  // @ts-ignore: Unreachable code error
   const makeShot = useCallback((particleRatio, opts) => {
     refAnimationInstance.current &&
+      // @ts-ignore: Unreachable code error
       refAnimationInstance.current({
         ...opts,
         origin: { y: 0.7 },
@@ -18,6 +21,7 @@ export default function Confetti() {
       });
   }, []);
 
+  // eslint-disable-next-line
   useEffect(() => fire(), []);
 
   const fire = useCallback(() => {
