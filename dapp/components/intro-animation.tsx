@@ -8,7 +8,7 @@ const sora = Sora({ subsets: ["latin"] });
 const containerVariants = {
   visible: {
     transition: {
-      staggerChildren: 0.1, // Delay between each child animation
+      staggerChildren: 0.4, // Delay between each child animation
     },
   },
   hidden: {},
