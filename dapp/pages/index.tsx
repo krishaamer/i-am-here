@@ -1,7 +1,6 @@
 import React from "react";
 import cn from "cnz";
 import Confetti from "../components/confetti";
-import Events from "../components/events";
 import Friends from "../components/friends";
 import ChatBox from "../components/chatbox";
 import {
