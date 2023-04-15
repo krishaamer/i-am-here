@@ -24,7 +24,7 @@ export default function ChatBox() {
         account={account || "0x3A6666e9d8fc42d903807EF35c713527223b1ce3"}
         supportAddress="0x3A6666e9d8fc42d903807EF35c713527223b1ce3"
         // @ts-ignore: Unreachable code error
-        env="production"
+        env="staging"
         modalTitle={"I AM HERE"}
         theme={theme}
       />
