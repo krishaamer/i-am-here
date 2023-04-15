@@ -48,13 +48,13 @@ export default function StakeChat({ friends }) {
           </span>
           <span className="inline-block">
             <Dropdown
-              label="This week"
+              label="Today"
               dismissOnClick={false}
               size="xl"
               className="inline"
             >
-              <Dropdown.Item>Taipei</Dropdown.Item>
-              <Dropdown.Item>Lisbon</Dropdown.Item>
+              <Dropdown.Item>This week</Dropdown.Item>
+              <Dropdown.Item>Next week</Dropdown.Item>
             </Dropdown>
           </span>
         </div>

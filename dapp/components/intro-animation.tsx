@@ -12,18 +12,24 @@ const containerVariants = {
 const childVariants = {
   visible: {
     opacity: 1,
+    x: 0,
+    scale: 1,
   },
   hidden: {
     opacity: 0,
+    x: -50,
+    scale: 0.8,
   },
   exit: {
     opacity: 0,
     x: 50,
+    scale: 0.8,
     transition: {
       delay: 0.2,
     },
   },
 };
+
 
 const IntroAnimation = () => {
   return (
@@ -34,13 +40,23 @@ const IntroAnimation = () => {
         animate="visible"
         exit="hidden"
       >
-        <motion.div variants={childVariants} className="text-4xl">
+        <motion.div key="child1" variants={childVariants} className="text-4xl">
           Tokyo
         </motion.div>
-        <motion.div variants={childVariants} exit="exit" className="text-4xl">
+        <motion.div
+          key="child2"
+          variants={childVariants}
+          exit="exit"
+          className="text-4xl"
+        >
           Taipei
         </motion.div>
-        <motion.div variants={childVariants} exit="exit" className="text-4xl">
+        <motion.div
+          key="child3"
+          variants={childVariants}
+          exit="exit"
+          className="text-4xl"
+        >
           Lisbon
         </motion.div>
       </motion.div>
