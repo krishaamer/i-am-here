@@ -5,19 +5,15 @@ import Events from "../components/events";
 import Friends from "../components/friends";
 import ChatBox from "../components/chatbox";
 import {
-  Inter,
   Sora,
-  Gloria_Hallelujah as Gloria,
-  Rubik_80s_Fade as Rubik,
+  Gloria_Hallelujah
 } from "next/font/google";
 import MetaMaskCard from "../components/MetaMaskCard";
 import Provider from "../components/Provider";
 import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
-const zora = Sora({ subsets: ["latin"] });
-const gloria = Gloria({ subsets: ["latin"], weight: ["400"] });
-const rubik = Rubik({ subsets: ["latin"], weight: ["400"] });
+const sora = Sora({ subsets: ["latin"] });
+const gloria = Gloria_Hallelujah({ subsets: ["latin"], weight: ["400"] });
 
 // @ts-ignore: Unreachable code error
 export default function StakeChat({ friends }) {
@@ -36,10 +32,12 @@ export default function StakeChat({ friends }) {
           <MetaMaskCard />
         </div>
         <div className="header grid h-screen place-items-center">
-          <h1 className={cn("text-5xl", gloria.className)}>Lisbon</h1>
+          <h1 className={cn("text-5xl", gloria.className)}>Tokyo</h1>
         </div>
         <div className="header grid h-screen place-items-center">
-          <h1 className={cn("text-5xl", gloria.className)}>Meet at Pragma</h1>
+          <h1 className={cn("text-5xl", gloria.className)}>
+            People to meet at Pragma
+          </h1>
           <Friends friends={friends} />
         </div>
         <div className="header grid h-screen place-items-center">
@@ -49,7 +47,7 @@ export default function StakeChat({ friends }) {
           </div>
         </div>
       </div>
-      <div className="chat-container inter">
+      <div className="chat-container sora">
         <Provider>
           <ChatBox />
         </Provider>
