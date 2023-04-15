@@ -118,16 +118,7 @@ export function ConnectWithSelect({
         )
       ) : (
         <button
-          onClick={() =>
-            // @ts-ignore: Unreachable code error
-            connector instanceof GnosisSafe
-              ? void connector
-                  .activate()
-                  .then(() => setError(undefined))
-                  .catch(setError)
-              : switchChain(desiredChainId)
-          }
-          disabled={isActivating || !desiredChainId}
+          onClick={() => switchChain(desiredChainId)}
         >
           {error ? "Try again?" : "Connect"}
         </button>
