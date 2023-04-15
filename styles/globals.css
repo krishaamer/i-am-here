@@ -18,10 +18,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.inter,
+.inter>* {
+  font-family: Inter !important;
+  font-size: 3rem !important;
+}
+
+.chat-container {}
+
+.chat-container div:first-child {
+  right: 1rem !important;
+}
+
+.chat-container span {
+  /* display: none; */
 }
