@@ -1,36 +1,50 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const containerVariants = {
   visible: {
     transition: {
-      staggerChildren: 0.1 // Delay between each child animation
-    }
+      staggerChildren: 0.1, // Delay between each child animation
+    },
   },
-  hidden: {}
+  hidden: {},
 };
 
 const childVariants = {
   visible: {
-    opacity: 1
+    opacity: 1,
   },
   hidden: {
-    opacity: 0
-  }
+    opacity: 0,
+  },
+  exit: {
+    opacity: 0,
+    x: 50,
+    transition: {
+      delay: 0.2,
+    },
+  },
 };
 
 const IntroAnimation = () => {
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible">
-      <motion.div variants={childVariants} className="text-4xl">
-        Tokyo
+    <AnimatePresence>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+      >
+        <motion.div variants={childVariants} className="text-4xl">
+          Tokyo
+        </motion.div>
+        <motion.div variants={childVariants} exit="exit" className="text-4xl">
+          Taipei
+        </motion.div>
+        <motion.div variants={childVariants} exit="exit" className="text-4xl">
+          Lisbon
+        </motion.div>
       </motion.div>
-      <motion.div variants={childVariants} className="text-4xl">
-        Taipei
-      </motion.div>
-      <motion.div variants={childVariants} className="text-4xl">
-        Lisbon
-      </motion.div>
-    </motion.div>
+    </AnimatePresence>
   );
 };
 

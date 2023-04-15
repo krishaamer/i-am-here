@@ -12,6 +12,8 @@ import {
 import MetaMaskCard from "../components/MetaMaskCard";
 import Provider from "../components/Provider";
 import Head from "next/head";
+import Image from "next/image";
+import pfp from "../public/pfp.png"
 
 const sora = Sora({ subsets: ["latin"] });
 const gloria = Gloria_Hallelujah({ subsets: ["latin"], weight: ["400"] });
@@ -27,6 +29,7 @@ export default function StakeChat({ friends }) {
       <div className="container mx-auto">
         <Confetti />
         <div className="header grid h-screen place-items-center">
+          <Image src={pfp} alt="I AM HERE" width={50} height={50} />
           <h1 className={cn("text-5xl", gloria.className)}>I AM HERE</h1>
           <IntroAnimation />
           <MetaMaskCard />
