@@ -21,7 +21,7 @@ export const initChain = async () => {
     vectorStore = await HNSWLib.load("./tmp", embeddings);
   } catch (e) {
     console.log("Could not load vector store, creating new one");
-    const text = fs.readFileSync("./../data/ethglobal/prizes.txt", "utf8");
+    const text = fs.readFileSync("./../data/sideevents/sideevents.txt", "utf8");
     /* Split the text into chunks */
     const textSplitter = new RecursiveCharacterTextSplitter({
       chunkSize: 1000,
