@@ -29,7 +29,7 @@ export default function StakeChat({ friends }) {
       <div className="container mx-auto">
         <Confetti />
         <div className="header grid h-screen place-items-center">
-          <Image src={pfp} alt="I AM HERE" width={50} height={50} />
+          <Image src={pfp} alt="I AM HERE" width={30} height={30} />
           <h1 className={cn("text-5xl", gloria.className)}>I AM HERE</h1>
           <IntroAnimation />
           <MetaMaskCard />
