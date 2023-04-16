@@ -1,7 +1,10 @@
 import React from "react";
 import { Chat, ITheme } from "@pushprotocol/uiweb";
+import { useWeb3React } from "@web3-react/core";
 
 export default function ChatBox() {
+  // @ts-ignore: Unreachable code error
+  const { account, library, chainId } = useWeb3React();
 
   const theme: ITheme = {
     bgColorPrimary: "#FFB4EF",
@@ -24,6 +27,7 @@ export default function ChatBox() {
         env="staging"
         modalTitle="I AM HERE."
         theme={theme}
+        signer={library?.getSigner(account)}
       />
     </div>
   );
