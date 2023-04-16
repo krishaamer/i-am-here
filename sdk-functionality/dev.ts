@@ -9,7 +9,7 @@ import {
   colors,
   uniqueNamesGenerator,
 } from "unique-names-generator";
-import { initChain } from "./todo";
+import { initChain } from "./ai";
 dotenv.config();
 const selfAddress = "0xFfEa14430490eDB32Ed08828B2C237888972095b";
 // CONFIGS

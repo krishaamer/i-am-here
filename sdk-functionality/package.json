@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node index.ts",
     "dev": "ts-node dev.ts",
-    "ai": "ts-node todo.ts"
+    "ai": "ts-node ai.ts"
   },
   "keywords": [],
   "author": "",
