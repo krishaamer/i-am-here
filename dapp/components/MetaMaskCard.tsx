@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-
 import { hooks, metaMask } from '../connectors/metaMask'
 import { MetaCard } from "./MetaCard"
 

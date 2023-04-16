@@ -4,7 +4,6 @@ import Confetti from "../components/confetti";
 import Friends from "../components/friends";
 import ChatBox from "../components/chatbox";
 import IntroAnimation from "../components/intro-animation";
-import { Dropdown } from "flowbite-react";
 import {
   Sora,
   Gloria_Hallelujah
@@ -12,8 +11,6 @@ import {
 import MetaMaskCard from "../components/MetaMaskCard";
 import Provider from "../components/Provider";
 import Head from "next/head";
-import Image from "next/image";
-import pfp from "../public/pfp.png"
 
 const sora = Sora({ subsets: ["latin"] });
 const gloria = Gloria_Hallelujah({ subsets: ["latin"], weight: ["400"] });

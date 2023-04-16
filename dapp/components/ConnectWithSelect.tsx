@@ -1,8 +1,7 @@
 import type { Web3ReactHooks } from "@web3-react/core";
 import type { MetaMask } from "@web3-react/metamask";
 import { useCallback, useEffect, useState } from "react";
-import { Button } from "@chakra-ui/react";
-import { CHAINS, getAddChainParameters } from "../connectors/chains";
+import { CHAINS, getAddChainParameters } from "../utils/chains";
 
 function ChainSelect({
   activeChainId,
@@ -76,16 +75,20 @@ export function ConnectWithSelect({
 
       try {
         if (
-          // If we're already connected to the desired chain, return. If they want to connect to the default chain and we're already connected, return
-
+          // If we're already connected to the desired chain, return
           desiredChainId === activeChainId ||
+          // If they want to connect to the default chain and we're already connected, return
           (desiredChainId === -1 && activeChainId !== undefined)
         ) {
           setError(undefined);
           return;
         }
 
-        await connector.activate(desiredChainId);
+        if (desiredChainId === -1) {
+          await connector.activate();
+        } else {
+          await connector.activate(getAddChainParameters(desiredChainId));
+        }
 
         setError(undefined);
       } catch (error) {
@@ -98,36 +101,45 @@ export function ConnectWithSelect({
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
+      <ChainSelect
+        activeChainId={desiredChainId}
+        switchChain={switchChain}
+        // @ts-ignore: Unreachable code error
+        chainIds={chainIds}
+      />
       <div style={{ marginBottom: "1rem" }} />
       {isActive ? (
         error ? (
-          <Button onClick={() => switchChain(desiredChainId)}>
+          <button
+            className="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={() => switchChain(desiredChainId)}
+          >
             Try again?
-          </Button>
+          </button>
         ) : (
-          <Button
+          <button
+            className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => {
               if (connector?.deactivate) {
                 void connector.deactivate();
               } else {
                 void connector.resetState();
               }
-
               // @ts-ignore: Unreachable code error
               setDesiredChainId(undefined);
             }}
           >
             Disconnect
-          </Button>
+          </button>
         )
       ) : (
-        <Button
-          colorScheme="teal"
-          // variant="outline"
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => switchChain(desiredChainId)}
+          disabled={isActivating || !desiredChainId}
         >
-          {error ? "Try again?" : "Check-in"}
-        </Button>
+          {error ? "Try again?" : "Connect"}
+        </button>
       )}
     </div>
   );
