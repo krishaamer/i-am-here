@@ -78,7 +78,7 @@ const IntroAnimation = () => {
           <motion.div
             key="child1"
             variants={childVariants}
-            className={cn("text-5xl", sora.className)}
+            className={cn("text-5xl text-black", sora.className)}
           >
             Tokyo
           </motion.div>
@@ -95,7 +95,7 @@ const IntroAnimation = () => {
             key="child2"
             variants={childVariants}
             exit={{ opacity: 0, x: 50, transition: { duration: 0.5 } }}
-            className={cn("text-5xl", sora.className)}
+            className={cn("text-5xl text-black", sora.className)}
           >
             Taipei
           </motion.div>
@@ -107,7 +107,7 @@ const IntroAnimation = () => {
               x: 50,
               transition: { duration: 0.5, delay: 0.1 },
             }}
-            className={cn("text-5xl", sora.className)}
+            className={cn("text-5xl text-black", sora.className)}
           >
             Lisbon
           </motion.div>
