@@ -134,7 +134,7 @@ export function ConnectWithSelect({
         )
       ) : (
         <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded"
           onClick={() => switchChain(desiredChainId)}
           disabled={isActivating || !desiredChainId}
         >
